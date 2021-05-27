@@ -1,0 +1,43 @@
+header {
+  display:flexbox;
+  background: #002855;
+  color:aliceblue;
+  text-align: left;
+  color:#8695b3;
+  padding-bottom: 0px;
+}
+body {
+  display: block;
+  text-align: center;
+  background: #001233;
+  color: aliceblue;
+}
+
+#contact {
+  padding:10px;
+  background: #001845;
+  color:#0353A4;
+}
+
+.nav-bar{
+  display:inline-flexbox;
+  padding: 8px;
+  background: #0466C8;
+  color:aliceblue;
+  margin-bottom: 20px;
+  border-radius: 5px;
+
+
+}
+
+#mBody {
+  background: #002855;
+  padding: 50px;
+
+}
+
+#un-con {
+  display:inline-block;
+  color: #0466C8;
+}
+
