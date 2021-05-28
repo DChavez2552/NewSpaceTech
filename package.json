@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "html-literal": "^1.1.0",
     "lodash": "^4.17.21",
     "navigo": "^7.1.3",
     "parcel-bundler": "^1.12.5"
@@ -19,5 +20,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DChavez2552/Capstone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DChavez2552/Capstone/issues"
+  },
+  "homepage": "https://github.com/DChavez2552/Capstone#readme"
 }

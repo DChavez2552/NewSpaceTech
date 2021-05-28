@@ -7,6 +7,7 @@ import { capitalize } from "lodash";
 
 const router = new Navigo(window.location.origin);
 
+
 router
   .on({
     "/": () => render(state.Home),
@@ -16,7 +17,7 @@ router
 
 function render(st) {
   document.querySelector("#root").innerHTML = `
-    ${Header()}
+    ${Header(st)}
     ${Nav(state.Links)}
     ${Main(st)}
     ${Footer()}
@@ -25,3 +26,4 @@ function render(st) {
 }
 
 render(state.Home);
+

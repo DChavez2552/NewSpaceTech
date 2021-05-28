@@ -1,5 +1,7 @@
+
+
 export default () => `
-<body>
+<div>
 
         <img src="https://www.stellartradingsystems.com/wp-content/uploads/2015/04/quantum.png"/>
         <h1>Welcome to Quantum Computing Info!</h1>
@@ -18,5 +20,5 @@ export default () => `
             <li>Cleaner website layout</li>
             <li>Search Function</li>
         </ul>
-</body>
-`
+</div>
+`;
