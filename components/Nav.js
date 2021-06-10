@@ -2,8 +2,8 @@
 
 export default Links => `
 <nav>
-<i class="fas fa-bars"></i>
-<ul class="hidden--mobile nav-links">
+<i class="fa-bars"></i>
+<ul class="navbar">
 ${Links
     .map(
       (link) => `<a href="/${link.title}" data-navigo>${link.text}</a>`
