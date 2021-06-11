@@ -9,4 +9,6 @@ export default () => `
         <p>Explore with us and find the latest technology under research by nasa by NASA.</p>
 
 </div>
+<div id="projects"></div>
+
 `;

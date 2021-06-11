@@ -19,13 +19,16 @@ body {
   color:#0353A4;
 }
 
-.navbar{
+.nav-bar{
   display:inline-flexbox;
   padding: 8px;
   background: #0466C8;
   color:aliceblue;
   margin-bottom: 20px;
   border-radius: 5px;
+  text-decoration: none;
+
+
 
 
 }
