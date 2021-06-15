@@ -18,10 +18,10 @@ const router = new Navigo(window.location.origin);
 //     console.log("Testing string",response.data)
 //     });
 let up1 = 0;
-function getProject(){
+function getProject(i){
   axios.get(`https://api.nasa.gov/techport/api/projects?api_key=JwT3Ks39qQ7L7lhkpJYKZrDkG0gwV1HsOvUJ6a6I`)
     .then( response => {
-    let new1 = response.data.projects[0].projectId;
+    let new1 = response.data.projects[i].projectId;
     console.log("Testing string",new1)
     up1 = new1;
 
@@ -33,15 +33,18 @@ function getProject(){
       let projectElement = document.getElementById("projects");
       let projectCard = document.createElement("div");
       projectCard.innerHTML = `
-        <h3>${project.project.title}</h3>
-      `
+        <h2>${project.project.title}</h2>
+        <h4>Last updated: ${project.project.lastUpdated}</h4>
+        <p>${project.project.description}</p>
+        `
       projectElement.appendChild(projectCard);
 
-    });
-    });
+      });
+      });
 
   }
-  getProject()
+for(let i = 0; i < 5; i++){getProject(i)};
+
 
 
 
