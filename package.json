@@ -10,7 +10,7 @@
     "parcel-bundler": "^1.12.5"
   },
   "name": "capstone",
-  "description": "This template repository contains several opinionated, 'starter' files and settings to help Savvy Coder students focus more time and energy on learning how to code and/or craft 'business logic' for projects and less time on configurations.",
+  "description": "This is my Capstone project. Is uses and API from NASA and posts what is currently under research.",
   "version": "1.0.0",
   "main": "index.js",
   "directories": {

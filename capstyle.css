@@ -19,6 +19,10 @@ body {
   color:#0353A4;
 }
 
+.title{
+  color: #0466C8;
+}
+
 .nav-bar{
   display:inline-flexbox;
   padding: 8px;

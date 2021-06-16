@@ -1,7 +1,7 @@
 import { Header, Nav, Main, Footer } from "./components";
 import * as state from './store';
 import axios from 'axios';
-import '/.env';
+import "dotenv";
 import Navigo from "navigo";
 import { capitalize, each } from "lodash";
 
@@ -33,7 +33,7 @@ function getProject(i){
       let projectElement = document.getElementById("projects");
       let projectCard = document.createElement("div");
       projectCard.innerHTML = `
-        <h2>${project.project.title}</h2>
+        <h2 class = "title">${project.project.title}</h2>
         <h4>Last updated: ${project.project.lastUpdated}</h4>
         <p>${project.project.description}</p>
         `
@@ -43,7 +43,8 @@ function getProject(i){
       });
 
   }
-for(let i = 0; i < 5; i++){getProject(i)};
+for(let i = 0; i < 5; i++){
+  getProject(i)};
 
 
 
