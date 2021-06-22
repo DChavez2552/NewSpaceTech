@@ -9,8 +9,24 @@ header {
 body {
   display: block;
   text-align: center;
-  background: #001233;
+  background-image: url("/server/img/17520.jpg");
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  height: 100%;
+  width: 100%;
+
+
   color: aliceblue;
+}
+
+#btn{
+  background: none;
+  border: none;
+  color: #0466C8;
+}
+
+#logo{
+  align-self: center;
 }
 
 #contact {
@@ -21,6 +37,16 @@ body {
 
 .title{
   color: #0466C8;
+  display:flexbox;
+  /* margin: 0pc 20pc 0pc 20pc */
+  background-color: none;
+}
+
+.description{
+  display:flexbox;
+  /* display: none */
+
+
 }
 
 .nav-bar{
@@ -30,21 +56,22 @@ body {
   color:aliceblue;
   margin-bottom: 20px;
   border-radius: 5px;
-  text-decoration: none;
-
-
-
 
 }
 
-#mBody {
-  background: #002855;
-  padding: 50px;
+.mbody{
+  margin: 0% 10%;
+  background-color: #002855 ;
+  background-repeat: no-repeat;
+  border-radius: 10px;
 
 }
+
+
 
 #un-con {
   display:inline-block;
   color: #0466C8;
 }
+
 

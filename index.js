@@ -8,15 +8,6 @@ import { capitalize, each } from "lodash";
 
 const router = new Navigo(window.location.origin);
 
-// axios.get(`https://api.nasa.gov/techport/api/projects?api_key=JwT3Ks39qQ7L7lhkpJYKZrDkG0gwV1HsOvUJ6a6I`)
-//     .then( response => {
-//     console.log("Testing string",response.data)
-//     });
-
-// axios.get(`https://api.nasa.gov/techport/api/specification?api_key=JwT3Ks39qQ7L7lhkpJYKZrDkG0gwV1HsOvUJ6a6I`)
-//     .then( response => {
-//     console.log("Testing string",response.data)
-//     });
 let up1 = 0;
 function getProject(i){
   axios.get(`https://api.nasa.gov/techport/api/projects?api_key=JwT3Ks39qQ7L7lhkpJYKZrDkG0gwV1HsOvUJ6a6I`)
@@ -33,22 +24,25 @@ function getProject(i){
       let projectElement = document.getElementById("projects");
       let projectCard = document.createElement("div");
       projectCard.innerHTML = `
-        <h2 class = "title">${project.project.title}</h2>
-        <h4>Last updated: ${project.project.lastUpdated}</h4>
-        <p>${project.project.description}</p>
-        `
+      <section class="mbody">
+
+          <button id="btn"><h2>${project.project.title}</h2></button>
+
+          <h4>Last updated: ${project.project.lastUpdated}</h4>
+
+
+        <div class="description"><p>${project.project.description}</p></div>
+      </section>  `
       projectElement.appendChild(projectCard);
 
       });
       });
 
   }
+
+
 for(let i = 0; i < 5; i++){
   getProject(i)};
-
-
-
-
 
 
 
@@ -67,9 +61,23 @@ function render(st) {
     ${Main(st)}
     ${Footer()}
   `;
-  // addEventListeners();
+
+  router.updatePageLinks()
   getProject();
+  // $(window).on('load', function() {
+  // // addEventListeners();
+
+  // });
 }
 
-render(state.Home);
+// function addEventListeners() {
+//   const button = document.getElementById("btn");
+//   console.log(button);
+//   button.addEventListener("click", () => {
+//     console.log("you clicked me");
+//     document.getElementsByClassName("description").style.display = "flex-box";
+//   });
+// }
+
+
 
