@@ -29,6 +29,12 @@ body {
   align-self: center;
 }
 
+@media (max-width: 700px ) {
+  #quantum{
+    width: 50%
+  }
+}
+
 #contact {
   padding:10px;
   background: #001845;
