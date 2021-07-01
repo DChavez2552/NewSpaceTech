@@ -86,6 +86,7 @@ body {
   margin-bottom: 20px;
   border-radius: 5px;
   flex-direction: row;
+  text-decoration: none;
 
 }
 .navbar{

@@ -6,7 +6,7 @@ export default Links => `
 <ul class="navbar">
 ${Links
     .map(
-      (link) => `<a class='nav-bar' href="/${link.title}" data-navigo>${link.text}</a>`
+      (link) => `<a class='nav-bar' href="${link.title}" data-navigo>${link.text}</a>`
     )
     .join()}
 </ul>
