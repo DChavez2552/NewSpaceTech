@@ -1,27 +1,11 @@
-// import getProject from "../functions/getProj.js";
-import drop from "../functions/drop.js"
 import axios from "axios";
-export default () => `
-<div><input class="topnav" type="text" placeholder="Search.."></div>
-<div>
 
-        <img id="quantum" src="https://www.stellartradingsystems.com/wp-content/uploads/2015/04/quantum.png"/>
-        <h1>Welcome to NewSpaceTech!</h1>
-        <p id='un-con'>This webpage is under construction</p>
-        <p>Explore with us and find the latest technology under research by NASA.</p>
-
-</div>
-<div id="projects"></div>
-
-`;
-
-let up1 = 0;
 function getProject(i){
   axios.get(`https://api.nasa.gov/techport/api/projects?api_key=JwT3Ks39qQ7L7lhkpJYKZrDkG0gwV1HsOvUJ6a6I`)
     .then( response => {
     let new1 = response.data.projects[i].projectId;
     console.log("Testing string",new1)
-    up1 = new1;
+    let up1 = new1;
 
     axios.get(`https://api.nasa.gov/techport/api/projects/${up1}?api_key=JwT3Ks39qQ7L7lhkpJYKZrDkG0gwV1HsOvUJ6a6I`)
       .then( response => {
@@ -36,32 +20,26 @@ function getProject(i){
 
           <div class="drop">
             <button class="drop__button"><h2>${project.project.title}</h2></button>
+          </div>
 
-            <h4 class="lastUpdate">Last updated: ${project.project.lastUpdated}</h4>
+          <h4>Last updated: ${project.project.lastUpdated}</h4>
 
-            <div class="drop__content">
-              <p>${project.project.description}</p>
-            </div>
+          <div class="drop__content">
+            <p>${project.project.description}</p>
           </div>
 
       </section>
-
-
+      <scripts>${dropdown}</scripts>
       `
       projectElement.appendChild(projectCard);
 
+      let body = projectCard.getElementsByClassName("mbody");
+      window.getSelection().collapse(body,0);
 
 
-    ;
       });
       });
 
-  }
+  };
 
-
-for(let i = 0; i < 3; i++){
-        getProject(i)};
-
-drop;
-
-
+export default getProject();

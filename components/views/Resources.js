@@ -2,6 +2,6 @@
 
 export default () => `
   <div >
-  <h1>Rescources</h1>
+  <h1>Resources</h1>
   </div>
 `;

@@ -5,7 +5,6 @@ import "dotenv";
 import Navigo from "navigo";
 import { capitalize, each } from "lodash";
 
-
 const router = new Navigo(window.location.origin);
 
 // let up1 = 0;
@@ -41,8 +40,6 @@ const router = new Navigo(window.location.origin);
 //   }
 
 
-// for(let i = 0; i < 5; i++){
-//   getProject(i)};
 
 
 
@@ -63,7 +60,7 @@ function render(st) {
   `;
 
   router.updatePageLinks()
-  getProject();
+  // getProject();
   // $(window).on('load', function() {
   // // addEventListeners();
 

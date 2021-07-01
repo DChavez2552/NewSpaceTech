@@ -19,14 +19,48 @@ body {
   color: aliceblue;
 }
 
-#btn{
-  background: none;
+.drop__button{
+  display: block;
+  width: 100%;
+  padding: 15px;
   border: none;
+  outline: none;
+  cursor: pointer;
+  background: #013066;
+  text-align:center;
   color: #0466C8;
+  transition: 1.5s
 }
+.active, .drop__button:hover {
+  background-color:rgba(0, 66, 173, 0.637);
+}
+.drop__button::after{
+  content: '\25be';
+  float: right;
+  transform: scale(3)
+
+}
+
+.drop__button--active {background: none;}
+.drop__button--active::after{content:'\25b8'}
+
+.drop__content{
+
+  padding: 0 15px;
+  background: #002855;
+  transition: max-height 0.2s;
+
+  display:none;
+  overflow:auto;
+
+}
+
+
 
 #logo{
   align-self: center;
+  float:right;
+  transform: scale(1.5);
 }
 
 @media (max-width: 700px ) {
@@ -62,6 +96,13 @@ body {
   color:aliceblue;
   margin-bottom: 20px;
   border-radius: 5px;
+  flex-direction: row;
+
+}
+.navbar{
+  display:inline-flex;
+  flex-direction: row;
+  float:center
 
 }
 
@@ -80,4 +121,9 @@ body {
   color: #0466C8;
 }
 
+.topnav{
+  display:flexbox;
+  float:center;
+
+}
 
