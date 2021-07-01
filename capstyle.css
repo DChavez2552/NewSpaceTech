@@ -33,7 +33,7 @@ body {
   cursor: pointer;
   background: #013066;
   text-align:center;
-  color: #0466C8;
+  color: #0172e4;
   transition: 1.5s
 }
 .active, .drop__button:hover {
