@@ -34,27 +34,23 @@ body {
 .active, .drop__button:hover {
   background-color:rgba(0, 66, 173, 0.637);
 }
-.drop__button::after{
-  content: '\25be';
-  float: right;
-  transform: scale(3)
-
+.drop__button::after, .active{
+  overflow:visible
 }
 
-.drop__button--active {background: none;}
-.drop__button--active::after{content:'\25b8'}
+
 
 .drop__content{
 
   padding: 0 15px;
   background: #002855;
-  transition: max-height 0.2s;
+  transition: max-height 0.2s ease-in-out;;
+  max-height: 0;
 
-  display:none;
-  overflow:auto;
+  overflow:hidden;
+
 
 }
-
 
 
 #logo{
@@ -80,13 +76,6 @@ body {
   display:flexbox;
   /* margin: 0pc 20pc 0pc 20pc */
   background-color: none;
-}
-
-.description{
-  display:flexbox;
-  /* display: none */
-
-
 }
 
 .nav-bar{

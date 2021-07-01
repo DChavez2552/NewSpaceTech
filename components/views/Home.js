@@ -1,5 +1,5 @@
 // import getProject from "../functions/getProj.js";
-import drop from "../functions/drop.js"
+import  { dropDown } from "../functions/drop.js"
 import axios from "axios";
 export default () => `
 <div><input class="topnav" type="text" placeholder="Search.."></div>
@@ -34,23 +34,28 @@ function getProject(i){
       projectCard.innerHTML = `
       <section class="mbody">
 
-          <div class="drop">
-            <button class="drop__button"><h2>${project.project.title}</h2></button>
+        <div class="drop">
 
-            <h4 class="lastUpdate">Last updated: ${project.project.lastUpdated}</h4>
+          <button class="drop__button"><h2>${project.project.title}</h2></button>
 
-            <div class="drop__content">
-              <p>${project.project.description}</p>
-            </div>
+          <div class="drop__content">
+            <p>${project.project.description}</p>
           </div>
 
+          <h4 class="lastUpdated">Last updated: ${project.project.lastUpdated}</h4>
+
+
+        </div>
+
+
       </section>
+
 
 
       `
       projectElement.appendChild(projectCard);
 
-
+      dropDown();
 
     ;
       });
@@ -62,6 +67,5 @@ function getProject(i){
 for(let i = 0; i < 3; i++){
         getProject(i)};
 
-drop;
-
+console.log("dropped");
 
