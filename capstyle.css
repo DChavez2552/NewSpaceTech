@@ -6,6 +6,11 @@ header {
   color:#8695b3;
   padding-bottom: 0px;
 }
+.benefits{
+  display:contents;
+  color:#0466C8
+}
+
 body {
   display: block;
   text-align: center;
@@ -80,13 +85,17 @@ body {
 
 .nav-bar{
   display:inline-flexbox;
-  padding: 8px;
+  padding: 20px;
   background: #0466C8;
   color:aliceblue;
   margin-bottom: 20px;
-  border-radius: 5px;
-  flex-direction: row;
+
+
   text-decoration: none;
+
+}
+.active, .nav-bar:hover{
+  background-color:rgba(0, 66, 173, 0.637);
 
 }
 .navbar{
@@ -115,5 +124,10 @@ body {
   display:flexbox;
   float:center;
 
+}
+.lastUpdated{
+
+  position: relative;
+  bottom: 10px
 }
 

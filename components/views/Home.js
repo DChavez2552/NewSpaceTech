@@ -39,7 +39,11 @@ function getProject(i){
           <button class="drop__button"><h2>${project.project.title}</h2></button>
 
           <div class="drop__content">
+
             <p>${project.project.description}</p>
+            <br>
+            <h2>Benefits</h2>
+            <p class="benefits">${project.project.benefits}</p>
           </div>
 
           <h4 class="lastUpdated">Last updated: ${project.project.lastUpdated}</h4>

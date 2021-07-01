@@ -3,12 +3,12 @@
 export default Links => `
 <nav>
 <i class="fa-bars"></i>
-<ul class="navbar">
+<div class="navbar">
 ${Links
     .map(
       (link) => `<a class='nav-bar' href="${link.title}" data-navigo>${link.text}</a>`
     )
-    .join()}
-</ul>
+    .join('')}
+</div>
 </nav>
 `;
