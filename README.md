@@ -1,4 +1,4 @@
-# NewSpaceTech Capstone Project
+# NewSpaceTech Project
 
 
 <h3> 
