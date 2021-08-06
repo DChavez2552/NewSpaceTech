@@ -10,7 +10,7 @@
   </p>
   
   <p>
-    <strong>A little bite about my coding philosophy:</strong> 
+    <strong>A little bit about my coding philosophy:</strong> 
     <ul>
       <li>Object Oriented Programming</li>
       <li>Functional Programming</li>
