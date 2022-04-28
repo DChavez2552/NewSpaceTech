@@ -19,7 +19,6 @@
       <li>If I don't know something I will tell you</li>
       <li>When I don't know something I will put my greatest skill to the test, researching</li>
       <li>Bugs are the best teachers</li>
-      <li>I chase the high that comes with squishing a bug that took hours to fix</li>
       <li>Take pride and ownership in your work!</li>
     </ul>
   </p>
