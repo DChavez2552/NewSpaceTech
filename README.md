@@ -6,7 +6,7 @@
   </p>
   
   <p>
-    Currently, it is mostly a front-end application as it takes an api call from NASA and displays the top 10 recently update projects being researched. It is hosted on netlify here: https://60de3242e9fa9100070fbd96--naughty-mcclintock-1ee971.netlify.app/. Some future implementations will inculde an expanded back-end using Mongo-DB (as that is what I am most experienced with), user accounts, a save or favorites option, working search forms, filter options updated and filled links. There are other things I will implement but these are highest in my backlog.
+    Currently, it is mostly a front-end application as it takes an api call from NASA and displays the top 10 recently update projects being researched. It is hosted on netlify here: https://626ab9e8a75583000889362e--naughty-mcclintock-1ee971.netlify.app/. Some future implementations will inculde an expanded back-end using Mongo-DB (as that is what I am most experienced with), user accounts, a save or favorites option, working search forms, filter options updated and filled links. There are other things I will implement but these are highest in my backlog.
   </p>
   
   <p>
